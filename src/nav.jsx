@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
 
+
 function App() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-   <div className="bg-gray-800 text-white shadow-2xs">
+   <div className=" bg-black text-white shadow-2xs">
 
       <nav className="relative p-4 flex items-center justify-between">
         {/* Logo */}
