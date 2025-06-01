@@ -1,0 +1,30 @@
+.grid2 {
+  margin: 30px;
+  top: 300px;
+  position: relative;
+  width: 100%;    
+    overflow: scroll;            /* full width so scrolling works */
+        /* horizontal scroll when content overflows */
+  white-space: nowrap;        /* prevent wrapping for inline elements */
+}
+
+ul {
+  display: flex;              /* flex container */
+  flex-wrap: nowrap;          /* no wrapping, keep in one line */
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 50px 0 0;         /* space between items, no inline display */
+  flex: 0 0 auto;             /* prevent flex items from shrinking */
+}
+
+ul li img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.395);
+  height: 300px;
+  width: 200px;
+  display: block;             /* removes inline gap */
+}

@@ -2,21 +2,45 @@
 
 /* nav.css */
 .navbar {
-  background-color: #33333336;
+  font-family: 'Poppins', sans-serif;
+  background-color: #00000000;
   color: white;
   display: flex;
   justify-content: space-around;
-  padding: 15px 0.6px  15px 30px;
+  padding: 15px;
   align-items: center;
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.364);
+}
+
+.navbar > div > input {
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  border: 1.5px solid white;
+  padding: 15px 15px 15px 40px; /* extra left padding for icon */
+  border-radius: 10px;
+  width: 20rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.278);
+
+  /* Background image settings */
+
+ /* Position it to the left, vertically centered */
+}
+
+.navbar input::placeholder {
+  color: #ffffff;           /* Change this to your preferred color */
+  opacity: 1;            /* Ensure full visibility */
+   font-family: 'Poppins', sans-serif;   /* Optional: style it */
 }
 
 .navbar-logo {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  left: calc( .2526 * -40vw);
+
   
 }
 
@@ -30,10 +54,13 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
+  padding-bottom: 2px;
 }
 
 .navbar-links li a:hover {
-  text-decoration: underline;
+  
+  border-bottom: 1px solid white;
+
 }
 
 .logo {
@@ -70,6 +97,14 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 735px) {
+
+  .inputsr{
+    display: none;
+  }
+
 }
 
 @media (max-width: 320px) {
