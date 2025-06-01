@@ -5,6 +5,10 @@ This project powers the frontend of [animeexplainer.netlify.app](https://animeex
 
 ---
 
+<img src="public/read.png" alt="AnimeExplainer Preview" style="width: 100%; max-width: 800px; border-radius: 8px;" />
+
+---
+
 ## 🚀 Tech Stack
 
 | Tech | Description |
