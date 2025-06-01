@@ -1,5 +1,5 @@
 import './foot.css';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaDiscord } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaDiscord ,FaTelegramPlane  } from 'react-icons/fa';
 
 function Foot() {
   return (
@@ -19,9 +19,11 @@ function Foot() {
         <div className="footer-social">
           <h4>Follow Us</h4>
           <div className="icons">
-            <a href="https://youtube.com" target="_blank" rel="noreferrer"><FaYoutube /></a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a>
-            <a href="mailto:contact@animeverse.com"><FaEnvelope /></a>
+            <a href="https://youtube.com/@theanimeexplainer2-og?si=0W5xyKt3O3cXKSbT" target="_blank" rel="noreferrer"><FaYoutube /></a>
+            <a href="https://www.instagram.com/the_anime_explainer?igsh=MTdkeDFkMHExYTRycA==" target="_blank" rel="noreferrer"><FaInstagram /></a>
+            <a href="mailto:sooryac022@gmail.com" title="Email"><FaEnvelope /></a>
+            <a href="https://t.me/the_anime_explainer" target="_blank" rel="noreferrer" title="Telegram"><FaTelegramPlane /></a>
+
           </div>
         </div>
       </div>
