@@ -1,30 +1,63 @@
 .grid2 {
-  margin: 30px;
+  margin: 50px 50px 0 5px;
   top: 300px;
   position: relative;
   width: 100%;    
-    overflow: scroll;            /* full width so scrolling works */
-        /* horizontal scroll when content overflows */
   white-space: nowrap;        /* prevent wrapping for inline elements */
 }
-
+body{
+  overflow-x: hidden;
+}
 ul {
-  display: flex;              /* flex container */
-  flex-wrap: nowrap;          /* no wrapping, keep in one line */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   padding: 0;
   margin: 0;
+
+
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
-ul li {
+ul::-webkit-scrollbar {
+  height: 8px; /* Controls scrollbar height */
+  background: transparent; /* Track background */
+}
+
+ul::-webkit-scrollbar-track {
+  background: transparent; /* Scrollbar track */
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: transparent; /* Scrollbar thumb */
+  border-radius: 4px;
+}
+
+ul:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Optional: show thumb slightly on hover */
+}
+
+
+
+
+ul .li {
   list-style: none;
-  margin: 0 50px 0 0;         /* space between items, no inline display */
+  margin: 0 90px 0 0;         /* space between items, no inline display */
   flex: 0 0 auto;             /* prevent flex items from shrinking */
 }
 
-ul li img {
+ul .li img {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.395);
   height: 300px;
   width: 200px;
-  display: block;             /* removes inline gap */
+  display: block;    
+    transition: transform 0.3s ease;      
+}
+
+ul .li img:hover {
+  transform: scale(1.05);
 }

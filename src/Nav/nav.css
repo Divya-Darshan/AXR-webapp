@@ -15,6 +15,14 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.364);
 }
 
+.navbar ul {
+  overflow: hidden;
+}
+ul li {
+
+    margin: 0 20px 0 0; 
+}
+
 .navbar > div > input {
   outline: none;
   font-family: 'Poppins', sans-serif;
@@ -47,7 +55,7 @@
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+
 }
 
 .navbar-links li a {
