@@ -1,12 +1,67 @@
-# React + Vite
+# 🌸 AnimeExplainer — Built with React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **AnimeExplainer** — a lightweight, blazing-fast React web app built using **Vite**.  
+This project powers the frontend of [animeexplainer.netlify.app](https://animeexplainer.netlify.app), a sleek and elegant platform for anime video explainers, reviews, and creative content.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+| Tech | Description |
+|------|-------------|
+| ⚛️ React | UI Library for building user interfaces |
+| ⚡ Vite | Next-gen frontend tool for lightning-fast development |
+| 🎯 ESLint | Code linter for clean, consistent code |
+| 🎨 CSS3 | Custom handcrafted styles for a polished look |
+| 🧩 React Icons | Beautiful icons from social platforms & more |
+| 🔄 Fast Refresh | Hot module replacement for rapid development |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Used Plugins
+
+### Official Vite Plugins
+
+- [`@vitejs/plugin-react`](https://github.com/vitejs/vite-plugin-react)
+  - Uses **Babel** for JSX transformation and **Fast Refresh**.
+
+You can optionally switch to:
+
+- [`@vitejs/plugin-react-swc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react-swc)
+  - Uses **SWC** compiler for even faster refresh and modern JS support.
+
+---
+
+## 📝 Project Focus
+
+This template is focused on:
+- Anime-centered web experiences
+- Seamless video embedding & display
+- Responsive grid layouts and creative UI
+- Professional site footers with privacy, terms, and contact info
+- Optimized build performance using Vite
+
+Ideal for content creators, anime reviewers, or YouTubers building their own websites.
+
+---
+
+## 💡 Note for Developers
+
+If you're building a **production-ready** application, consider:
+- Adding **TypeScript** for type safety
+- Enabling **type-aware linting** via [`typescript-eslint`](https://typescript-eslint.io)
+- Checking out the [TypeScript React template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
+
+---
+
+## 📂 Project Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Start local dev server
+npm run dev
+
+# Build for production
+npm run build
