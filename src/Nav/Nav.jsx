@@ -12,7 +12,7 @@ function Nav() {
           <ul className="navbar-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Video</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="../about.html">About</a></li>
 
         </ul>
     </nav>
