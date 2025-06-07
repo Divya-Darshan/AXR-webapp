@@ -9,36 +9,21 @@ function grid2() {
         <div className='grid2'>
 
     <ul>
-       <li className='li'>
-          <a href="#in">
-            <img src="https://ani-watch.s3.us-west-1.amazonaws.com/anime_posters/watamote-no-matter-how-i-look-at-it-its-you-guys-fault-im-unpopular-3326_poster.jpg" alt="" />
-          </a>
-        </li>
         <li className='li'>
-          <a href="#in">
-            <img src="https://th.bing.com/th/id/OIP.5RUgd85KQ_swBTIvzzXniAHaKs?rs=1&pid=ImgDetMain" alt="" />
+          <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTex_uh3ZHm8JJ0fi6EFxJOuQ">
+            <img src="https://pics.filmaffinity.com/A_Herbivorous_Dragon_of_5_000_Years_Gets_Unfairly_Villainized_TV_Series-657054934-large.jpg" alt="" />
           </a>
         </li>
+
+
         <li className='li'>
-          <a href="#in">
-            <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/05/Demon-Slayer-Movie-Gyomei-Himejima-Infinity-Castle-Poster.jpg?resize=212" alt="" />
-          </a>
-        </li >
-        <li className='li'>
-          <a href="#in">
-            <img src="https://darkskylady.com/wp-content/uploads/2022/09/81kHWcb7n4L.jpg" alt="" />
+          <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTexq_M2K6SJQgmKAB4cD_vEQ">
+            <img src="https://th.bing.com/th/id/OIP.KNTqswGjWuZcTorbNlTBlwAAAA?r=0&rs=1&pid=ImgDetMain" alt="" />
           </a>
         </li>
-        <li className='li'>
-          <a href="#in">
-            <img src="https://th.bing.com/th/id/OIP.Iv_tlAbxSMHN4tZllRCzeAHaLP?rs=1&pid=ImgDetMain" alt="" />
-          </a>
-        </li>
-       <li className='li'>
-          <a href="#in">
-            <img src="https://ani-watch.s3.us-west-1.amazonaws.com/anime_posters/watamote-no-matter-how-i-look-at-it-its-you-guys-fault-im-unpopular-3326_poster.jpg" alt="" />
-          </a>
-        </li>
+
+        
+        
 
       </ul>
 

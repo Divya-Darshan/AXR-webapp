@@ -13,9 +13,6 @@ createRoot(document.getElementById('root')).render(
     <Vid />
     <Grid />
     <G2 />
-    <G2 />
-    <G2 />
-    <G2 />
     <Foot />
     
   </StrictMode>,

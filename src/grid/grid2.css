@@ -1,52 +1,35 @@
 .grid2 {
-  margin: 50px 50px 0 5px;
-  top: 300px;
   position: relative;
-  width: 100%;    
-  white-space: nowrap;        /* prevent wrapping for inline elements */
+  margin-top: 20rem;
 }
-body{
+
+/* Removed unused .grid2 */
+
+body {
   overflow-x: hidden;
 }
+
 ul {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Align left for better UX on scroll */
   flex-wrap: nowrap;
-  padding: 0;
+  padding: 0 16px; /* Prevent first/last item cutoff */
   margin: 0;
-
-
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 ul::-webkit-scrollbar {
-  height: 8px; /* Controls scrollbar height */
-  background: transparent; /* Track background */
+  display: none; /* Hide scrollbar on WebKit browsers */
 }
-
-ul::-webkit-scrollbar-track {
-  background: transparent; /* Scrollbar track */
-}
-
-ul::-webkit-scrollbar-thumb {
-  background: transparent; /* Scrollbar thumb */
-  border-radius: 4px;
-}
-
-ul:hover::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2); /* Optional: show thumb slightly on hover */
-}
-
-
-
 
 ul .li {
   list-style: none;
-  margin: 0 90px 0 0;         /* space between items, no inline display */
-  flex: 0 0 auto;             /* prevent flex items from shrinking */
+  margin: 0 12px; /* Small horizontal margin by default */
+  flex: 0 0 auto; /* Prevent shrinking */
 }
 
 ul .li img {
@@ -54,10 +37,23 @@ ul .li img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.395);
   height: 300px;
   width: 200px;
-  display: block;    
-    transition: transform 0.3s ease;      
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 ul .li img:hover {
   transform: scale(1.05);
+}
+
+/* Larger margins on bigger screens */
+@media (min-width: 768px) {
+  ul .li {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  ul .li {
+    margin: 0 90px;
+  }
 }
