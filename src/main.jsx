@@ -10,12 +10,12 @@ import App from './App';  // Import the new App component
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App /> 
+
     <Nav />
     <Vid />
     <Grid />
     <G2 />
     <Foot />
-    
+        <App /> 
   </StrictMode>,
 )
