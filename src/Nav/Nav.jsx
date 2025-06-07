@@ -10,9 +10,9 @@ function Nav() {
         <div className="navbar-logo">THE AXR</div>
           <div className='inputsr'><input type="text" placeholder='Search' /></div>
           <ul className="navbar-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Video</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
 
         </ul>
     </nav>
