@@ -6,9 +6,11 @@ import Vid from './Vid/vid.jsx'
 import Grid from './grid/grid.jsx'
 import G2 from './grid/grid2.jsx'
 import Foot from './footer/foot.jsx'
+import App from './App';  // Import the new App component
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <App /> 
     <Nav />
     <Vid />
     <Grid />
