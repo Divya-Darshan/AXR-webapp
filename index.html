@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://yt3.googleusercontent.com/l9exL-QVcEMHpStnE5TJe2YDQNKFVl8k1zW-1KUZKCdjdz87TR6Gvlx3g0Wiey7FiegAdoiY=s160-c-k-c0x00ffffff-no-rj" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #2a2a2a;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      nav {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      nav .inputsr {
+        flex: 1 1 100%;
+        margin-top: 10px;
+      }
+
+      nav input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1.5px solid white;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        outline: none;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0 0;
+        margin: 0;
+      }
+
+      nav li {
+        margin-right: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding-bottom: 2px;
+      }
+
+      nav a:hover {
+        border-bottom: 1px solid white;
+      }
+
+      .video-container {
+        height: 90vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .section-title {
+        margin: 3rem 1rem 1rem;
+        text-shadow: 0 0 20px white, 0 0 40px white, 0 0 80px white;
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+      }
+
+      .scroll-row {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;
+        padding: 10px 16px;
+        scroll-behavior: smooth;
+      }
+
+      .scroll-row::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scroll-item {
+        flex: 0 0 auto;
+      }
+
+      .scroll-item img {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(88, 83, 83, 0.4);
+        width: 160px;
+        height: 240px;
+        transition: transform 0.3s ease;
+      }
+
+      .scroll-item img:hover {
+        transform: scale(1.05);
+      }
+
+      @media (min-width: 768px) {
+        nav {
+          flex-wrap: nowrap;
+        }
+
+        nav .inputsr {
+          flex: 0 1 auto;
+          margin-top: 0;
+          margin-left: 20px;
+        }
+
+        nav input {
+          width: 20rem;
+        }
+
+        .scroll-item img {
+          width: 200px;
+          height: 300px;
+        }
+
+        .section-title {
+          font-size: 2.5rem;
+          margin: 4rem 2rem 1rem;
+        }
+      }
+
+       .grid-section {
+    margin: 2rem 1rem;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: center;
+  }
+
+.grid-section a {
+  margin: 8px; /* adds space around each grid item */
+  display: inline-block; /* ensures margin works nicely */
+}
+
+.grid-section a img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.395);
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+  .grid-section a img:hover {
+    transform: scale(1.05);
+  }
+
+  .section-title {
+    margin: 30px 10px;
+    text-shadow: 0 0 20px white, 0 0 40px white, 0 0 80px white;
+    font-size: xx-large;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .section-title {
+      font-size: x-large;
+    }
+    .inputsr{
+        display: none;
+    }
+  }
+
+  
+    .footer {
+      background-color: #0a0a0a;
+      padding: 50px 30px;
+      border-radius: 6px 6px 0 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto 30px auto;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-brand p {
+      font-size: 0.95rem;
+      color: #bbb;
+      line-height: 1.5;
+    }
+
+    .footer-social h4 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-social .icons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .footer-social .icons a {
+      font-size: 1.4rem;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-social .icons a:hover {
+      color: #ff5c5c;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      font-size: 0.85rem;
+      color: #888;
+      margin: 5px 0;
+    }
+
+    .footer-bottom .disclaimer {
+      max-width: 900px;
+      margin: 10px auto 0;
+      font-size: 0.8rem;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    /* Icons from CDN - size and spacing tweaks */
+    .footer-social .icons a svg {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-social .icons {
+        justify-content: center;
+      }
+
+      .footer-social .icons a {
+        margin: 0 10px;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+  .grid-section a {
+    margin: 5px;
+  }
+  
+  .grid-section a img {
+    width: 140px;
+    height: 210px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <div style="font-size: 24px; font-weight: bold;">THE AXR</div>
+      <div class="inputsr">
+        <input type="text" placeholder="Search" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="video-container">
+      <video src="/vid/fin.mp4" autoplay muted loop disablepictureinpicture></video>
+    </div>
+
+<div>
+  <div class="section-title">Special For You!</div>
+  <div class="grid-section">
+    <a href="https://www.youtube.com/watch?v=0YEcU38l-Bw&list=PLzRmpPFtDTewgc9mlIZHByZYnMrCC4ORW&index=1">
+      <img src="https://th.bing.com/th/id/OIP.uneO5yN9tPoqamfXy3wcpQHaLH?r=0&rs=1&pid=ImgDetMain" alt="Thumbnail 1" />
+    </a>
+    <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTewscfQccYJERp4QLYrNMF2h">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4d1c20147981115.62cd4820415b9.png" alt="Thumbnail 2" />
+    </a>
+    <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTewSO_3gEyi53aXw6f3Ym7hJ">
+      <img src="https://static.tvtropes.org/pmwiki/pub/images/assassination_classroom_keyvisual.png" alt="Thumbnail 3" />
+    </a>
+    <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTex2f0vGF2GZcAadIl1FZwoG">
+      <img src="https://th.bing.com/th/id/OIP.HzVnL7JIk0DgvLY1ahUCYAHaKj?r=0&rs=1&pid=ImgDetMain" alt="Thumbnail 4" />
+    </a>
+  </div>
+</div>
+
+<div>
+
+  <div class="grid-section">
+    <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTex_uh3ZHm8JJ0fi6EFxJOuQ">
+      <img src="https://pics.filmaffinity.com/A_Herbivorous_Dragon_of_5_000_Years_Gets_Unfairly_Villainized_TV_Series-657054934-large.jpg" alt="Thumbnail 5" />
+    </a>
+    <a href="https://www.youtube.com/playlist?list=PLzRmpPFtDTexq_M2K6SJQgmKAB4cD_vEQ">
+      <img src="https://th.bing.com/th/id/OIP.KNTqswGjWuZcTorbNlTBlwAAAA?r=0&rs=1&pid=ImgDetMain" alt="Thumbnail 6" />
+    </a>
+  </div>
+</div>
+
+
+
+
+  <!-- FontAwesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>AnimeExplainer</h2>
+        <p>Your gateway to deep anime breakdowns and episode explorations. Powered by passion.</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="icons">
+          <a href="https://youtube.com/@theanimeexplainer2-og?si=0W5xyKt3O3cXKSbT" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/the_anime_explainer?igsh=MTdkeDFkMHExYTRycA==" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:sooryac022@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://t.me/the_anime_explainer" target="_blank" aria-label="Telegram">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> AnimeVerse. All rights reserved.</p>
+      <p class="disclaimer">
+        This website is fan-made and shares anime episode breakdowns for educational and entertainment purposes only.
+        Reproduction or redistribution of any content without permission is strictly prohibited.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamically set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  </body>
+</html>

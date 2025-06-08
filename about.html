@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – AXR</title>
+  <link rel="stylesheet" href="About.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+
+
+}
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://wallpaperaccess.com/full/2638569.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.767);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 800px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .overlay {
+    padding: 16px;
+  }
+}
+
+
+    .footer {
+      background-color: #0a0a0a;
+      padding: 50px 30px;
+      border-radius: 6px 6px 0 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto 30px auto;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-brand p {
+      font-size: 0.95rem;
+      color: #bbb;
+      line-height: 1.5;
+    }
+
+    .footer-social h4 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-social .icons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .footer-social .icons a {
+      font-size: 1.4rem;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-social .icons a:hover {
+      color: #ff5c5c;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      font-size: 0.85rem;
+      color: #888;
+      margin: 5px 0;
+    }
+
+    .footer-bottom .disclaimer {
+      max-width: 900px;
+      margin: 10px auto 0;
+      font-size: 0.8rem;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    /* Icons from CDN - size and spacing tweaks */
+    .footer-social .icons a svg {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-social .icons {
+        justify-content: center;
+      }
+
+      .footer-social .icons a {
+        margin: 0 10px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+
+  <section class="about-section">
+    <div class="overlay">
+      <img
+        src="https://yt3.googleusercontent.com/l9exL-QVcEMHpStnE5TJe2YDQNKFVl8k1zW-1KUZKCdjdz87TR6Gvlx3g0Wiey7FiegAdoiY=s160-c-k-c0x00ffffff-no-rj"
+        alt="YouTube Channel Profile"
+        class="profile-img"
+      />
+      <div class="title">Explore the Anime World – In Tamil</div>
+      <div class="description">
+        Welcome to a platform dedicated to sharing the world of anime, brought to life through the expressive Tamil language. 
+        From action-packed adventures to emotional storylines, each video breaks down anime moments with engaging and easy-to-understand Tamil explanations. 
+        Whether you're a longtime fan or just getting started, this website is your gateway to exploring anime in a way that's relatable, fun, and deeply connected to Tamil culture. 
+        Dive into your favorite shows — now in your own language!
+      </div>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Footer Example</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .footer {
+      background-color: #0a0a0a;
+      padding: 50px 30px;
+      border-radius: 6px 6px 0 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto 30px auto;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-brand p {
+      font-size: 0.95rem;
+      color: #bbb;
+      line-height: 1.5;
+    }
+
+    .footer-social h4 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-social .icons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .footer-social .icons a {
+      font-size: 1.4rem;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-social .icons a:hover {
+      color: #ff5c5c;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      font-size: 0.85rem;
+      color: #888;
+      margin: 5px 0;
+    }
+
+    .footer-bottom .disclaimer {
+      max-width: 900px;
+      margin: 10px auto 0;
+      font-size: 0.8rem;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    /* Icons from CDN - size and spacing tweaks */
+    .footer-social .icons a svg {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-social .icons {
+        justify-content: center;
+      }
+
+      .footer-social .icons a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FontAwesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
