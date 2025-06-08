@@ -3,8 +3,7 @@
 Welcome to **AnimeExplainer** — a lightweight, blazing-fast React web app built using **Vite**.  
 This project powers the frontend of [animeexplainer.netlify.app](https://animeexplainer.netlify.app), a sleek and elegant platform for anime video explainers, reviews, and creative content.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b8843675-3bb2-4489-9968-0171ef6cfec0/deploy-status)](https://app.netlify.com/projects/animeexplainer/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/314884ad-b650-49ac-9dde-02de41f63be0/deploy-status)](https://app.netlify.com/projects/animeexplainer/deploys)
 ---
 
 <img src="public/read.png" alt="AnimeExplainer Preview" style="width: 100%; max-width: 800px; border-radius: 8px;" />
